@@ -1,0 +1,23 @@
+{
+  "name": "leaflet-tiles",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "postbuild": "cp ./src/data.json5 ./dist/"
+  },
+  "author": "Piotr Such",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jquery": "^3.5.25",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/proj4": "^2.5.5",
+    "axios": "^1.6.0",
+    "leaflet": "^1.9.4",
+    "proj4": "^2.9.2",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.8.1",
+    "tsyringe": "^4.8.0"
+  }
+}
