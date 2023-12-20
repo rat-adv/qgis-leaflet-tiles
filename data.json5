@@ -1,0 +1,22 @@
+{
+  numberOfSimultaneousRequests: 32,
+  // app change this fragments: ${WMSLayer} ${WMSName} ${BBox}
+  WMSAddress: "https://qgis-server.rat-adv.com:8443/ows/qgis_mapserv.fcgi?map=/data/qwc_demo.qgs&SERVICE=WMS&REQUEST=GetMap&LAYERS=${WMSLayer}&STYLES=&FORMAT=image%2Fpng&TRANSPARENT=true&VERSION=1.1.1&WMSNAME=${WMSName}&GRAPHICELEMENT=%5Bobject%20Object%5D&WIDTH=256&HEIGHT=256&SRS=EPSG%3A3857&BBOX=${BBox}",
+  generateFile: false,
+  fileName: 'data.txt',
+  downloadTiles: true,
+  layers: [
+    {
+      WMSLayer: "forestCountry",
+      zoomStart: 4,
+      zoomStop: 18,
+      WMSName: "forestProvince"
+    },
+    {
+      layerName: "roadsAlternativeProvince",
+      zoomStart: 4,
+      zoomStop: 18,
+      WMSName: "roadsAlternativeProvince"
+    }
+  ]
+}

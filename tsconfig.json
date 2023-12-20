@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
     "outDir": "./dist",
-    "target": "es6",
+    "target": "es2015",
     "module": "commonjs",
+    "types": ["node"],
     "strict": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
